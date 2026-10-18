@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "articles": {
+    "https://commandline.microsoft.com/?p=327": {
+      "guid": "https://commandline.microsoft.com/?p=327",
+      "title": "PyRIT: Democratizing AI red teaming through open-source tooling",
+      "link": "https://commandline.microsoft.com/pyrit-python-risk-identification-tool-ai-red-teaming-subject-matter-experts/",
+      "published": "Thu, 10 Sep 2026 13:54:24 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:40Z",
+      "checked_at": "2026-10-18T13:31:41Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=327&content_sig=28fa6fe70922f71e8d5beb01d08aca6890fbd2c27f19926cf0f691ce97a7f99d",
+      "duration_sec": 745.784,
+      "size_bytes": 14917440,
+      "author": "Richard Lundeen, Roman Lutz",
+      "categories": [
+        "Open Source"
+      ],
+      "summary": "Learn how the Python Risk Identification Tool for generative AI evolved over time to open up AI red teaming to subject matter experts from virtually any domain."
+    },
+    "https://commandline.microsoft.com/?p=516": {
+      "guid": "https://commandline.microsoft.com/?p=516",
+      "title": "Introducing run-assert-eval: Find the risk, fix it, prove it",
+      "link": "https://commandline.microsoft.com/run-assert-eval-responsible-ai-agent-risk-discovery-at-runtime/",
+      "published": "Thu, 24 Sep 2026 17:28:30 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:40Z",
+      "checked_at": "2026-10-18T13:31:40Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=516&content_sig=6f8ecc1d67f6b957778fcd27fae656a0e60dafd1add05fa8044ac5b7cd4af45a",
+      "duration_sec": 1423.022,
+      "size_bytes": 28462080,
+      "author": "Alex Ngo, Chang Liu, Mehrnoosh Sameki, Mike Shi, Katelyn Rothney, Ahmed Magooda, Responsible AI at Microsoft",
+      "categories": [
+        "Open Source"
+      ],
+      "summary": "Today, we’re introducing run-assert-eval, a skill that discovers the risks that matter for a given agent, measures how often the agent fails, generates runtime policy directly from those findings, and reruns the eval to prove whether the fix worked."
+    },
+    "https://commandline.microsoft.com/?p=537": {
+      "guid": "https://commandline.microsoft.com/?p=537",
+      "title": "LLM-as-translator pattern: Adding natural language understanding to an existing system without rewriting it",
+      "link": "https://commandline.microsoft.com/llm-as-translator-pattern-natural-language-understanding-conversational-search-existing-system/",
+      "published": "Fri, 02 Oct 2026 16:05:10 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:39Z",
+      "checked_at": "2026-10-18T13:31:40Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=537&content_sig=70878068755f0d969f009d8444dcf654db6205699db70a76752f7aa91a57af2d",
+      "duration_sec": 433.094,
+      "size_bytes": 8663520,
+      "author": "Simon Thurman",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "Modernizing an existing implementation can be expensive and disruptive. Instead, consider introducing an abstraction layer to give your legacy system a modern facelift."
+    },
+    "https://commandline.microsoft.com/?p=545": {
+      "guid": "https://commandline.microsoft.com/?p=545",
+      "title": "Azure Content Understanding: Building on lessons from a decade of Document Intelligence",
+      "link": "https://commandline.microsoft.com/azure-content-understanding-document-intelligence-perception-grounding-confidence-reasoning-system/",
+      "published": "Fri, 02 Oct 2026 16:06:15 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:38Z",
+      "checked_at": "2026-10-18T13:31:39Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=545&content_sig=ad9734a7dd2c1041b883f97c5603a1e88413fa1a1636967abaf7dc9ca74323de",
+      "duration_sec": 892.452,
+      "size_bytes": 17850720,
+      "author": "Cha Zhang",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "Trust in document understanding is built one edge case at a time. Here’s what a decade of teaching machines to read taught us about what LLMs can and can’t do."
+    },
+    "https://commandline.microsoft.com/?p=578": {
+      "guid": "https://commandline.microsoft.com/?p=578",
+      "title": "Building an agentic system and a learning loop around customer IP",
+      "link": "https://commandline.microsoft.com/kantar-link-ai-content-optimizer-advertising-learning-loop/",
+      "published": "Mon, 05 Oct 2026 14:01:03 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:37Z",
+      "checked_at": "2026-10-18T13:31:38Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=578&content_sig=c15de58be9b8a372e1b76898e60e8091165910ccc4212b9dc3ae3ad8af2b18b7",
+      "duration_sec": 817.72,
+      "size_bytes": 16356000,
+      "author": "AI Acceleration Studio, Microsoft Frontier Company, Milena Marinova, Kanio Dimitrov, Don Hejna, Yousef Al-Kofahi",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "We worked with Kantar to turn 30 years of metrics and frameworks into an agentic system that evaluates and helps optimize ads."
+    },
+    "https://commandline.microsoft.com/?p=609": {
+      "guid": "https://commandline.microsoft.com/?p=609",
+      "title": "Beyond violation rates: Are your AI evaluations measuring the right things?",
+      "link": "https://commandline.microsoft.com/structured-ai-evaluation-design-assert-vs-petri-bloom/",
+      "published": "Mon, 05 Oct 2026 14:54:13 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:36Z",
+      "checked_at": "2026-10-18T13:31:37Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=609&content_sig=14ad6b0ea1bacac9bc144aedbcc47c0480bf8f04d2e39c752c5e9a0a948e0604",
+      "duration_sec": 1267.096,
+      "size_bytes": 25343520,
+      "author": "Xiawei Wang, Riccardo Fogliato, Abhinav Palia, Chang Liu, Yeming Tang, Heba Elfardy, Sandeep Atluri, Responsible AI at Microsoft",
+      "categories": [
+        "Deep Dive",
+        "Open Source"
+      ],
+      "summary": "Structured evaluation design can improve both the breadth of behaviors tested and the interpretability of the resulting failures, leading to practical advantages for generating diverse, traceable, and actionable evaluations."
+    },
+    "https://commandline.microsoft.com/?p=622": {
+      "guid": "https://commandline.microsoft.com/?p=622",
+      "title": "Bringing local models and sandboxed tools to Windows and GitHub Copilot",
+      "link": "https://commandline.microsoft.com/local-models-sandboxed-tools-github-windows/",
+      "published": "Wed, 07 Oct 2026 18:00:00 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:35Z",
+      "checked_at": "2026-10-18T13:31:36Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=622&content_sig=8b1d75b038ee04fa3890aefa845749726bb406480a84d66684d6bf3fe378451b",
+      "duration_sec": 726.55,
+      "size_bytes": 14532480,
+      "author": "Patrick Nikoletich, Stuart Schaefer",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "Coming soon, GitHub Copilot will determine when a task is best handled by on-device intelligence and when it should leverage cloud-scale models."
+    },
+    "https://commandline.microsoft.com/?p=647": {
+      "guid": "https://commandline.microsoft.com/?p=647",
+      "title": "Introducing Microsoft-Decision-1, our model for fast decision-making",
+      "link": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "published": "Sat, 10 Oct 2026 01:35:51 +0000",
+      "status": "no_audio",
+      "first_seen": "2026-10-18T13:31:34Z",
+      "checked_at": "2026-10-18T13:32:27Z",
+      "author": "Achint Srivastava",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "Our new decision-scoring model delivers top performance in latency and quality on structured decision tasks to outperform both LLMs and other decision models."
+    },
+    "https://commandline.microsoft.com/?p=711": {
+      "guid": "https://commandline.microsoft.com/?p=711",
+      "title": "Copilot to autopilot: Why no single safeguard is enough",
+      "link": "https://commandline.microsoft.com/ai-agent-copilot-autopilot-layered-model-production-network-incidents-on-call-engineers/",
+      "published": "Tue, 13 Oct 2026 16:03:25 +0000",
+      "status": "no_audio",
+      "first_seen": "2026-10-18T13:31:33Z",
+      "checked_at": "2026-10-18T13:32:21Z",
+      "author": "Arun Malik",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "We designed a layered model that lets an AI agent resolve production network incidents on its own within defined identity, authorization, tooling, and human-approval boundaries."
+    },
+    "https://commandline.microsoft.com/?p=755": {
+      "guid": "https://commandline.microsoft.com/?p=755",
+      "title": "What will the next generation of developers do when AI writes the code?",
+      "link": "https://commandline.microsoft.com/praise-preceptor-ai-accelerated-software-engineering-cmu/",
+      "published": "Thu, 15 Oct 2026 15:00:22 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-18T13:31:33Z",
+      "checked_at": "2026-10-18T13:31:33Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=755&content_sig=3c782e4a78ee3c7385052d1dc0fd426950595f7e114c8f6cd6ad96e0a645eeaf",
+      "duration_sec": 343.078,
+      "size_bytes": 6863040,
+      "author": "Mark Russinovich, Scott Hanselman",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "Microsoft and Carnegie Mellon University are betting that the junior developers we train today will be the senior engineers of tomorrow."
+    }
+  }
+}

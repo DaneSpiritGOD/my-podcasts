@@ -1,0 +1,5 @@
+#!/bin/sh
+# Run the test suite. No dependencies: stdlib unittest only.
+set -e
+cd "$(dirname "$0")"
+PYTHONPATH=src exec python3 -m unittest discover -s tests -t . "$@"

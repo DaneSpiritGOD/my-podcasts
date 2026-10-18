@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command Line</title>
+    <link>https://commandline.microsoft.com/</link>
+    <description>By builders, for builders. Audio readings of posts from the Microsoft Command Line blog.</description>
+    <language>en-us</language>
+    <itunes:author>Microsoft Command Line</itunes:author>
+    <itunes:summary>By builders, for builders. Audio readings of posts from the Microsoft Command Line blog.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="Technology" />
+    <itunes:image href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/cover.png" />
+    <image>
+      <url>https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/cover.png</url>
+      <title>Command Line</title>
+      <link>https://commandline.microsoft.com/</link>
+    </image>
+    <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2026 15:00:22 +0000</lastBuildDate>
+    <item>
+      <title>What will the next generation of developers do when AI writes the code?</title>
+      <link>https://commandline.microsoft.com/praise-preceptor-ai-accelerated-software-engineering-cmu/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=755</guid>
+      <pubDate>Thu, 15 Oct 2026 15:00:22 +0000</pubDate>
+      <itunes:author>Mark Russinovich, Scott Hanselman</itunes:author>
+      <category>Conversation</category>
+      <description>Microsoft and Carnegie Mellon University are betting that the junior developers we train today will be the senior engineers of tomorrow.</description>
+      <itunes:summary>Microsoft and Carnegie Mellon University are betting that the junior developers we train today will be the senior engineers of tomorrow.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>5:43</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=755&amp;content_sig=3c782e4a78ee3c7385052d1dc0fd426950595f7e114c8f6cd6ad96e0a645eeaf" length="6863040" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Bringing local models and sandboxed tools to Windows and GitHub Copilot</title>
+      <link>https://commandline.microsoft.com/local-models-sandboxed-tools-github-windows/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=622</guid>
+      <pubDate>Wed, 07 Oct 2026 18:00:00 +0000</pubDate>
+      <itunes:author>Patrick Nikoletich, Stuart Schaefer</itunes:author>
+      <category>Deep Dive</category>
+      <description>Coming soon, GitHub Copilot will determine when a task is best handled by on-device intelligence and when it should leverage cloud-scale models.</description>
+      <itunes:summary>Coming soon, GitHub Copilot will determine when a task is best handled by on-device intelligence and when it should leverage cloud-scale models.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>12:07</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=622&amp;content_sig=8b1d75b038ee04fa3890aefa845749726bb406480a84d66684d6bf3fe378451b" length="14532480" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Beyond violation rates: Are your AI evaluations measuring the right things?</title>
+      <link>https://commandline.microsoft.com/structured-ai-evaluation-design-assert-vs-petri-bloom/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=609</guid>
+      <pubDate>Mon, 05 Oct 2026 14:54:13 +0000</pubDate>
+      <itunes:author>Xiawei Wang, Riccardo Fogliato, Abhinav Palia, Chang Liu, Yeming Tang, Heba Elfardy, Sandeep Atluri, Responsible AI at Microsoft</itunes:author>
+      <category>Deep Dive</category>
+      <category>Open Source</category>
+      <description>Structured evaluation design can improve both the breadth of behaviors tested and the interpretability of the resulting failures, leading to practical advantages for generating diverse, traceable, and actionable evaluations.</description>
+      <itunes:summary>Structured evaluation design can improve both the breadth of behaviors tested and the interpretability of the resulting failures, leading to practical advantages for generating diverse, traceable, and actionable evaluations.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>21:07</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=609&amp;content_sig=14ad6b0ea1bacac9bc144aedbcc47c0480bf8f04d2e39c752c5e9a0a948e0604" length="25343520" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Building an agentic system and a learning loop around customer IP</title>
+      <link>https://commandline.microsoft.com/kantar-link-ai-content-optimizer-advertising-learning-loop/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=578</guid>
+      <pubDate>Mon, 05 Oct 2026 14:01:03 +0000</pubDate>
+      <itunes:author>AI Acceleration Studio, Microsoft Frontier Company, Milena Marinova, Kanio Dimitrov, Don Hejna, Yousef Al-Kofahi</itunes:author>
+      <category>Deep Dive</category>
+      <description>We worked with Kantar to turn 30 years of metrics and frameworks into an agentic system that evaluates and helps optimize ads.</description>
+      <itunes:summary>We worked with Kantar to turn 30 years of metrics and frameworks into an agentic system that evaluates and helps optimize ads.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>13:38</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=578&amp;content_sig=c15de58be9b8a372e1b76898e60e8091165910ccc4212b9dc3ae3ad8af2b18b7" length="16356000" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Azure Content Understanding: Building on lessons from a decade of Document Intelligence</title>
+      <link>https://commandline.microsoft.com/azure-content-understanding-document-intelligence-perception-grounding-confidence-reasoning-system/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=545</guid>
+      <pubDate>Fri, 02 Oct 2026 16:06:15 +0000</pubDate>
+      <itunes:author>Cha Zhang</itunes:author>
+      <category>Deep Dive</category>
+      <description>Trust in document understanding is built one edge case at a time. Here’s what a decade of teaching machines to read taught us about what LLMs can and can’t do.</description>
+      <itunes:summary>Trust in document understanding is built one edge case at a time. Here’s what a decade of teaching machines to read taught us about what LLMs can and can’t do.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>14:52</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=545&amp;content_sig=ad9734a7dd2c1041b883f97c5603a1e88413fa1a1636967abaf7dc9ca74323de" length="17850720" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>LLM-as-translator pattern: Adding natural language understanding to an existing system without rewriting it</title>
+      <link>https://commandline.microsoft.com/llm-as-translator-pattern-natural-language-understanding-conversational-search-existing-system/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=537</guid>
+      <pubDate>Fri, 02 Oct 2026 16:05:10 +0000</pubDate>
+      <itunes:author>Simon Thurman</itunes:author>
+      <category>Conversation</category>
+      <description>Modernizing an existing implementation can be expensive and disruptive. Instead, consider introducing an abstraction layer to give your legacy system a modern facelift.</description>
+      <itunes:summary>Modernizing an existing implementation can be expensive and disruptive. Instead, consider introducing an abstraction layer to give your legacy system a modern facelift.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>7:13</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=537&amp;content_sig=70878068755f0d969f009d8444dcf654db6205699db70a76752f7aa91a57af2d" length="8663520" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Introducing run-assert-eval: Find the risk, fix it, prove it</title>
+      <link>https://commandline.microsoft.com/run-assert-eval-responsible-ai-agent-risk-discovery-at-runtime/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=516</guid>
+      <pubDate>Thu, 24 Sep 2026 17:28:30 +0000</pubDate>
+      <itunes:author>Alex Ngo, Chang Liu, Mehrnoosh Sameki, Mike Shi, Katelyn Rothney, Ahmed Magooda, Responsible AI at Microsoft</itunes:author>
+      <category>Open Source</category>
+      <description>Today, we’re introducing run-assert-eval, a skill that discovers the risks that matter for a given agent, measures how often the agent fails, generates runtime policy directly from those findings, and reruns the eval to prove whether the fix worked.</description>
+      <itunes:summary>Today, we’re introducing run-assert-eval, a skill that discovers the risks that matter for a given agent, measures how often the agent fails, generates runtime policy directly from those findings, and reruns the eval to prove whether the fix worked.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>23:43</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=516&amp;content_sig=6f8ecc1d67f6b957778fcd27fae656a0e60dafd1add05fa8044ac5b7cd4af45a" length="28462080" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>PyRIT: Democratizing AI red teaming through open-source tooling</title>
+      <link>https://commandline.microsoft.com/pyrit-python-risk-identification-tool-ai-red-teaming-subject-matter-experts/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=327</guid>
+      <pubDate>Thu, 10 Sep 2026 13:54:24 +0000</pubDate>
+      <itunes:author>Richard Lundeen, Roman Lutz</itunes:author>
+      <category>Open Source</category>
+      <description>Learn how the Python Risk Identification Tool for generative AI evolved over time to open up AI red teaming to subject matter experts from virtually any domain.</description>
+      <itunes:summary>Learn how the Python Risk Identification Tool for generative AI evolved over time to open up AI red teaming to subject matter experts from virtually any domain.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>12:26</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=327&amp;content_sig=28fa6fe70922f71e8d5beb01d08aca6890fbd2c27f19926cf0f691ce97a7f99d" length="14917440" type="audio/mpeg" />
+    </item>
+  </channel>
+</rss>

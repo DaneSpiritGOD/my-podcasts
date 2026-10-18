@@ -1,0 +1,18 @@
+version: 2
+
+updates:
+  # Actions are pinned to commit SHAs in the workflow, which is what makes them
+  # tamper-resistant — but a pinned SHA never updates itself. Dependabot reads
+  # the `# vX.Y.Z` comment next to each pin and opens a PR when a newer release
+  # appears, so the pin stays current without going stale.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+    # One PR for both actions rather than two separate ones.
+    groups:
+      actions:
+        patterns:
+          - "*"

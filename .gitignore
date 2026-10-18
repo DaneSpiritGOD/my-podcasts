@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Audio is never stored in the repo: Episodes point at the Source URL.
+audio/
+*.mp3
+*.m4a
+
+# Local state backup
+state.local.json
+
+.DS_Store
+
+# Local scratch: handoff notes, samples, anything not for GitHub.
+temp/
+
+# Run logs are per-run diagnostics, not repository content. The workflow
+# uploads them as artifacts instead.
+run.log
+run-console.log
