@@ -28,11 +28,6 @@ EPISODE = "episode"
 NO_AUDIO = "no_audio"
 FAILED = "failed"
 
-# An Article can gain audio shortly after publication (TTS generation lags the
-# post), so a no_audio verdict is rechecked for this many days before becoming
-# terminal. See Q26.
-NO_AUDIO_RECHECK_DAYS = 7
-
 
 def _now_iso() -> str:
     return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -155,30 +150,13 @@ def guid_key(guid: str) -> str:
     return (guid or "").strip()
 
 
-def _days_since(iso_timestamp: str, now: Optional[datetime.datetime] = None) -> float:
-    now = now or datetime.datetime.now(datetime.timezone.utc)
-    try:
-        then = datetime.datetime.strptime(iso_timestamp, "%Y-%m-%dT%H:%M:%SZ")
-    except (TypeError, ValueError):
-        return float("inf")
-    then = then.replace(tzinfo=datetime.timezone.utc)
-    return (now - then).total_seconds() / 86400.0
-
-
-def needs_processing(
-    entry: Optional[Entry],
-    now: Optional[datetime.datetime] = None,
-) -> bool:
+def needs_processing(entry: Optional[Entry]) -> bool:
     """Whether an Article should be fetched again.
 
-    Unknown Articles always need processing. Failed ones are retried. A
-    no_audio verdict is rechecked for a while in case audio was added after
-    publication, then left alone.
-
-    The window is measured from ``first_seen``, never from ``checked_at``:
-    rechecking updates ``checked_at``, so anchoring there would reset the age to
-    zero on every run, keep the verdict forever fresh, and refetch the same
-    Articles daily for no benefit.
+    Unknown Articles always need processing, and failed ones are retried. A
+    no_audio verdict is terminal: audio is not added to a published Article
+    later, so rechecking one refetches the same page every run and rewrites
+    State, producing a commit whose only content is a timestamp.
     """
     if entry is None:
         return True
@@ -187,5 +165,5 @@ def needs_processing(
     if entry.status == FAILED:
         return True
     if entry.status == NO_AUDIO:
-        return _days_since(entry.first_seen, now) < NO_AUDIO_RECHECK_DAYS
+        return False
     return True

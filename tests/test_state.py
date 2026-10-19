@@ -31,40 +31,31 @@ def entry(status, checked_at="2026-10-18T11:00:00Z", **kwargs):
 
 class NeedsProcessingTests(unittest.TestCase):
     def test_unknown_article_needs_processing(self):
-        self.assertTrue(needs_processing(None, NOW))
+        self.assertTrue(needs_processing(None))
 
     def test_episode_is_never_reprocessed(self):
-        self.assertFalse(needs_processing(entry(EPISODE), NOW))
+        self.assertFalse(needs_processing(entry(EPISODE)))
 
     def test_failed_is_retried(self):
-        self.assertTrue(needs_processing(entry(FAILED), NOW))
+        self.assertTrue(needs_processing(entry(FAILED)))
 
-    def test_fresh_no_audio_is_rechecked(self):
-        self.assertTrue(needs_processing(entry(NO_AUDIO), NOW))
+    def test_no_audio_is_never_rechecked(self):
+        """A no_audio verdict is terminal on first sight.
 
-    def test_recheck_window_is_measured_from_first_seen(self):
-        """The window must close, or the Article is refetched forever.
-
-        ``checked_at`` moves on every recheck, so measuring the window from it
-        pins the age at zero: the verdict never becomes terminal, every run
-        refetches the Article, and the pipeline commits a no-op every day.
+        Audio is not added to a published Article later, so rechecking one is
+        pure cost: it refetches the same page every run and rewrites State, so
+        the pipeline commits a no-op that contains nothing but a timestamp.
         """
-        # Seen 8 days ago, rechecked just now: the window has passed.
-        old = Entry(
-            guid="https://example.test/?p=1",
-            title="T",
-            link="https://example.test/one/",
-            published="Thu, 15 Oct 2026 15:00:22 +0000",
-            status=NO_AUDIO,
-            first_seen="2026-10-10T11:00:00Z",
-            checked_at="2026-10-18T11:00:00Z",
+        just_seen = entry(
+            NO_AUDIO,
+            first_seen="2026-10-18T11:59:00Z",
+            checked_at="2026-10-18T11:59:00Z",
         )
-        self.assertFalse(needs_processing(old, NOW))
+        self.assertFalse(needs_processing(just_seen))
 
-    def test_recheck_stops_once_the_window_closes(self):
-        """Simulate daily runs: the verdict must eventually become terminal."""
+    def test_no_audio_stays_terminal_over_many_days(self):
+        """Daily runs must never pick the same no_audio Article up again."""
         first_seen = "2026-10-10T11:00:00Z"
-        # Day 0..9 after first_seen; the 7-day window means days 7+ are done.
         verdicts = []
         for day in range(10):
             now = datetime.datetime(
@@ -77,37 +68,13 @@ class NeedsProcessingTests(unittest.TestCase):
                 published="Thu, 15 Oct 2026 15:00:22 +0000",
                 status=NO_AUDIO,
                 first_seen=first_seen,
-                # Every recheck bumps this, which is why it cannot be the anchor.
                 checked_at=now.strftime("%Y-%m-%dT%H:%M:%SZ"),
             )
-            verdicts.append(needs_processing(candidate, now))
-        self.assertEqual(verdicts[:7], [True] * 7)
-        self.assertEqual(verdicts[7:], [False] * 3)
-
-    def test_stale_no_audio_is_terminal(self):
-        stale = entry(
-            NO_AUDIO,
-            first_seen="2026-10-01T00:00:00Z",
-            checked_at="2026-10-01T00:00:00Z",
-        )
-        self.assertFalse(needs_processing(stale, NOW))
-
-    def test_no_audio_recheck_window_is_seven_days(self):
-        six_days = entry(
-            NO_AUDIO,
-            first_seen="2026-10-12T13:00:00Z",
-            checked_at="2026-10-18T11:00:00Z",
-        )
-        eight_days = entry(
-            NO_AUDIO,
-            first_seen="2026-10-10T11:00:00Z",
-            checked_at="2026-10-18T11:00:00Z",
-        )
-        self.assertTrue(needs_processing(six_days, NOW))
-        self.assertFalse(needs_processing(eight_days, NOW))
+            verdicts.append(needs_processing(candidate))
+        self.assertEqual(verdicts, [False] * 10)
 
     def test_unknown_status_needs_processing(self):
-        self.assertTrue(needs_processing(entry("mystery"), NOW))
+        self.assertTrue(needs_processing(entry("mystery")))
 
     def test_unparseable_first_seen_is_terminal_for_no_audio(self):
         """An unreadable anchor means the window cannot be shown to be open.
@@ -116,7 +83,7 @@ class NeedsProcessingTests(unittest.TestCase):
         the verdict has stood long enough.
         """
         bad = entry(NO_AUDIO, first_seen="garbage")
-        self.assertFalse(needs_processing(bad, NOW))
+        self.assertFalse(needs_processing(bad))
 
 
 class SerialisationTests(unittest.TestCase):

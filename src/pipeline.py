@@ -139,7 +139,7 @@ def run(transport, state: State, report: Optional[RunReport] = None) -> RunRepor
 
     for article in articles:
         existing = state.get(article.guid)
-        if not state_mod.needs_processing(existing, now):
+        if not state_mod.needs_processing(existing):
             log.debug("skipping %s (already %s)", article.title, existing.status)
             continue
 
