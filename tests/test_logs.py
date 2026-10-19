@@ -5,6 +5,7 @@ day is no longer an option. These tests pin the properties that make it usable:
 one JSON object per line, UTC timestamps, and context fields carried through.
 """
 
+import datetime
 import json
 import logging
 import os
@@ -41,6 +42,22 @@ class JsonLineFormatterTests(unittest.TestCase):
         formatter = logs.JsonLineFormatter()
         payload = json.loads(formatter.format(self.record()))
         self.assertTrue(payload["ts"].endswith("Z"))
+
+    def test_timestamp_value_is_really_utc(self):
+        # Appending a literal "Z" to local time produces a log that lies about
+        # its zone, which is worse than no zone at all: it is off by the
+        # machine's offset and nothing about it looks wrong.
+        formatter = logs.JsonLineFormatter()
+        payload = json.loads(formatter.format(self.record()))
+        stamped = datetime.datetime.strptime(payload["ts"], "%Y-%m-%dT%H:%M:%SZ")
+        now_utc = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+        self.assertLess(
+            abs((now_utc - stamped).total_seconds()),
+            120,
+            "log timestamp {} is not close to UTC now {}".format(
+                payload["ts"], now_utc.isoformat()
+            ),
+        )
 
     def test_context_fields_are_promoted(self):
         formatter = logs.JsonLineFormatter()

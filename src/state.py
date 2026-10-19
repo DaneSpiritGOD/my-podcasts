@@ -172,7 +172,13 @@ def needs_processing(
     """Whether an Article should be fetched again.
 
     Unknown Articles always need processing. Failed ones are retried. A
-    no_audio verdict is rechecked while it is fresh, then left alone.
+    no_audio verdict is rechecked for a while in case audio was added after
+    publication, then left alone.
+
+    The window is measured from ``first_seen``, never from ``checked_at``:
+    rechecking updates ``checked_at``, so anchoring there would reset the age to
+    zero on every run, keep the verdict forever fresh, and refetch the same
+    Articles daily for no benefit.
     """
     if entry is None:
         return True
@@ -181,5 +187,5 @@ def needs_processing(
     if entry.status == FAILED:
         return True
     if entry.status == NO_AUDIO:
-        return _days_since(entry.checked_at, now) < NO_AUDIO_RECHECK_DAYS
+        return _days_since(entry.first_seen, now) < NO_AUDIO_RECHECK_DAYS
     return True

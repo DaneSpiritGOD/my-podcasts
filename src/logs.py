@@ -18,6 +18,7 @@ Secrets never reach a log line: this project has none, and the Source URL is
 already public in feed.xml.
 """
 
+import datetime
 import json
 import logging
 import os
@@ -34,6 +35,19 @@ _DATEFMT = "%Y-%m-%dT%H:%M:%S"
 _NOISY = ("urllib3",)
 
 
+class _UtcFormatter(logging.Formatter):
+    """A Formatter whose timestamps are genuinely UTC.
+
+    ``logging.Formatter.formatTime`` uses ``time.localtime`` by default, so the
+    "Z" in the format string above would be stapled onto local time — off by
+    the machine's offset, and indistinguishable from correct.
+    """
+
+    def formatTime(self, record, datefmt=None) -> str:
+        moment = datetime.datetime.fromtimestamp(record.created, datetime.timezone.utc)
+        return moment.strftime(datefmt or _DATEFMT)
+
+
 def context_suffix(record: logging.LogRecord) -> str:
     """Render the ``ctx_*`` extras as a trailing `` [k=v k=v]``.
 
@@ -48,7 +62,7 @@ def context_suffix(record: logging.LogRecord) -> str:
     return " [{}]".format(" ".join(parts)) if parts else ""
 
 
-class ConsoleFormatter(logging.Formatter):
+class ConsoleFormatter(_UtcFormatter):
     """Human-readable, with structured context appended to the message."""
 
     def format(self, record: logging.LogRecord) -> str:
@@ -56,7 +70,7 @@ class ConsoleFormatter(logging.Formatter):
         return rendered + context_suffix(record)
 
 
-class JsonLineFormatter(logging.Formatter):
+class JsonLineFormatter(_UtcFormatter):
     """Render each record as one JSON object per line."""
 
     def format(self, record: logging.LogRecord) -> str:

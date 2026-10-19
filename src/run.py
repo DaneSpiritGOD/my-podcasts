@@ -169,7 +169,13 @@ def main(argv=None):
     # Also on stdout so it is greppable without the log file.
     print(summary)
 
-    return EXIT_ATTENTION if fresh.needs_attention else EXIT_OK
+    # The two alarms are independent. A fresh Feed can still have every
+    # published Episode unplayable (a takedown), so both verdicts have to be
+    # consulted; reading only freshness would make the sentinel's issue
+    # unreachable.
+    if sentinel_result.needs_attention or fresh.needs_attention:
+        return EXIT_ATTENTION
+    return EXIT_OK
 
 
 if __name__ == "__main__":

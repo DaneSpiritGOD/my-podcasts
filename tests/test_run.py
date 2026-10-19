@@ -33,6 +33,28 @@ class OfflineTransport:
         return 0
 
 
+class BrokenEpisodeTransport:
+    """The source site is reachable, but one Episode's audio is gone for good.
+
+    This is the shape of a takedown: the Source URL 403s and the Article page
+    no longer offers audio, so the Sentinel cannot recover it.
+    """
+
+    def __init__(self, *args, **kwargs):
+        pass
+
+    def get_text(self, url):
+        if url.rstrip("/").endswith("/feed"):
+            return (
+                '<?xml version="1.0"?><rss version="2.0"><channel>'
+                "<title>Command Line</title></channel></rss>"
+            )
+        return "<html><body>no player here</body></html>"
+
+    def probe(self, url):
+        return 403
+
+
 def write(path, text):
     with open(path, "w", encoding="utf-8") as handle:
         handle.write(text)
@@ -116,6 +138,43 @@ class CliTests(unittest.TestCase):
         code, stdout, _ = self.invoke("--dry-run", "--stale-after-days", "365")
         self.assertEqual(code, run_mod.EXIT_OK)
         self.assertIn("stale=no", self.outcome(stdout))
+
+    def test_broken_sentinel_exits_one_even_when_the_feed_is_fresh(self):
+        """A takedown is not a staleness problem, and must still exit 1.
+
+        The two alarms are independent: the Feed can be perfectly fresh while
+        every published Episode is unplayable. Reading only the freshness
+        verdict here would make the sentinel's issue unreachable.
+        """
+        write(self.state_path, state_doc())
+        with mock.patch.object(fetch_mod, "Transport", BrokenEpisodeTransport):
+            code, stdout, _ = self.invoke(
+                "--dry-run", "--stale-after-days", "365"
+            )
+        self.assertEqual(code, run_mod.EXIT_ATTENTION)
+        line = self.outcome(stdout)
+        self.assertIn("stale=no", line)
+        self.assertIn("sentinel=broken", line)
+
+    def test_recoverable_sentinel_does_not_exit_one(self):
+        """A refresh that works is not news: it must not page a human."""
+
+        class RefreshableTransport(BrokenEpisodeTransport):
+            def get_text(self, url):
+                if url.rstrip("/").endswith("/feed"):
+                    return super().get_text(url)
+                return (
+                    '<html><script>var MAIVoiceReaderConfig = '
+                    '{"initialAudio":{"status":"ready",'
+                    '"audio_url":"https://example.test/?content_audio=1&content_sig=fresh",'
+                    '"duration_sec":100,"size_bytes":2000}};</script></html>'
+                )
+
+        write(self.state_path, state_doc())
+        with mock.patch.object(fetch_mod, "Transport", RefreshableTransport):
+            code, stdout, _ = self.invoke("--dry-run", "--stale-after-days", "365")
+        self.assertEqual(code, run_mod.EXIT_OK)
+        self.assertIn("sentinel=refreshed", self.outcome(stdout))
 
     def test_offline_source_feed_does_not_change_the_episode_count(self):
         """A failed run must not add or drop Episodes."""
