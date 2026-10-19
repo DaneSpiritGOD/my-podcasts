@@ -38,7 +38,8 @@ If you fork this to point at a different blog, that blog's terms apply to your o
 
 ## Running it locally
 
-No dependencies beyond Python 3.9+:
+No dependencies beyond Python 3.12. The version is pinned in `.python-version`,
+which the workflow reads, so CI and a local run use the same interpreter.
 
 ```sh
 python3 src/run.py            # refresh state.json and feed.xml

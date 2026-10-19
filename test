@@ -1,5 +1,31 @@
 #!/bin/sh
 # Run the test suite. No dependencies: stdlib unittest only.
+#
+# The interpreter is chosen to match .python-version, so a local run and a CI
+# run cannot silently diverge. Falling back to plain python3 is allowed but
+# announced, because that is exactly the drift the pin exists to prevent.
 set -e
 cd "$(dirname "$0")"
-PYTHONPATH=src exec python3 -m unittest discover -s tests -t . "$@"
+
+wanted=$(tr -d '[:space:]' < .python-version 2>/dev/null || true)
+python=""
+
+if [ -n "$wanted" ]; then
+  for candidate in "python$wanted" python3; do
+    if command -v "$candidate" >/dev/null 2>&1; then
+      if "$candidate" -c "import sys; sys.exit(0 if '.'.join(map(str, sys.version_info[:2])) == '$wanted' else 1)" 2>/dev/null; then
+        python=$candidate
+        break
+      fi
+    fi
+  done
+  if [ -z "$python" ]; then
+    echo "warning: no Python $wanted found; .python-version is not being honoured." >&2
+    python=python3
+  fi
+else
+  python=python3
+fi
+
+echo "using $("$python" -V 2>&1)" >&2
+PYTHONPATH=src exec "$python" -m unittest discover -s tests -t . "$@"
