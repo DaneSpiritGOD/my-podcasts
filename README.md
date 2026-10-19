@@ -99,6 +99,7 @@ Retention is the reason there is no archive step: 90 days of daily runs is a qua
 | `src/freshness.py` | Detects a Feed that has stopped advancing |
 | `src/logs.py` | The Run Log: JSON lines on disk, readable text on stderr |
 | `src/fetch.py` | The HTTP transport, and the scheme/host allowlist |
+| `src/keepalive.py` | Refreshes the `.keepalive` stamp that keeps the schedule alive |
 | `src/run.py` | CLI entry point used by the workflow |
 | `assets/` | Cover art sources (official vector logo + mark) |
 

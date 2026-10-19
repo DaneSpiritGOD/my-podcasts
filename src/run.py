@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import freshness as freshness_mod
 import fetch as fetch_mod
+import keepalive as keepalive_mod
 import logs
 import pipeline
 import sentinel as sentinel_mod
@@ -33,6 +34,7 @@ import state as state_mod
 DEFAULT_STATE = "state.json"
 DEFAULT_FEED = "feed.xml"
 DEFAULT_LOG = "run.log"
+DEFAULT_KEEPALIVE = keepalive_mod.KEEPALIVE_PATH
 
 EXIT_OK = 0
 EXIT_ATTENTION = 1
@@ -84,6 +86,11 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Refresh the podcast Feed.")
     parser.add_argument("--state", default=DEFAULT_STATE)
     parser.add_argument("--feed", default=DEFAULT_FEED)
+    parser.add_argument(
+        "--keepalive",
+        default=DEFAULT_KEEPALIVE,
+        help="stamp file that keeps the schedule alive (empty to disable)",
+    )
     parser.add_argument(
         "--log",
         default=DEFAULT_LOG,
@@ -163,6 +170,17 @@ def main(argv=None):
         write(args.state, state.to_json())
         write(args.feed, feed_xml)
         log.info("wrote %s and %s", args.state, args.feed)
+
+        # GitHub disables scheduled workflows in a public repository after 60
+        # days without activity, and whether this workflow's own commits count
+        # is undocumented. The stamp removes the guess: it is refreshed only
+        # when it is about to age out, so a quiet repository still gets a commit
+        # roughly every six weeks and a busy one gets none.
+        if args.keepalive:
+            if keepalive_mod.refresh(args.keepalive):
+                log.info("refreshed keepalive stamp %s", args.keepalive)
+            else:
+                log.info("keepalive stamp %s is current", args.keepalive)
 
     summary = outcome_line(report, sentinel_result, fresh)
     log.info(summary)

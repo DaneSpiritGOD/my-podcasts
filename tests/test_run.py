@@ -87,6 +87,7 @@ class CliTests(unittest.TestCase):
         self.state_path = os.path.join(self.dir, "state.json")
         self.feed_path = os.path.join(self.dir, "feed.xml")
         self.log_path = os.path.join(self.dir, "run.log")
+        self.keepalive_path = os.path.join(self.dir, ".keepalive")
         patcher = mock.patch.object(fetch_mod, "Transport", OfflineTransport)
         patcher.start()
         self.addCleanup(patcher.stop)
@@ -105,6 +106,8 @@ class CliTests(unittest.TestCase):
                     self.feed_path,
                     "--log",
                     self.log_path,
+                    "--keepalive",
+                    self.keepalive_path,
                     *extra,
                 ]
             )
@@ -195,6 +198,44 @@ class CliTests(unittest.TestCase):
         write(self.state_path, state_doc())
         self.invoke("--dry-run")
         self.assertFalse(os.path.exists(self.feed_path))
+
+    def test_a_real_run_writes_the_keepalive_stamp(self):
+        write(self.state_path, state_doc())
+        self.invoke("--stale-after-days", "365")
+        self.assertTrue(os.path.exists(self.keepalive_path))
+
+    def test_dry_run_does_not_write_the_keepalive_stamp(self):
+        write(self.state_path, state_doc())
+        self.invoke("--dry-run")
+        self.assertFalse(os.path.exists(self.keepalive_path))
+
+    def test_a_second_run_leaves_a_current_stamp_alone(self):
+        """Otherwise the safety net would itself commit on every run."""
+        write(self.state_path, state_doc())
+        self.invoke("--stale-after-days", "365")
+        before = os.stat(self.keepalive_path).st_mtime_ns
+        self.invoke("--stale-after-days", "365")
+        self.assertEqual(os.stat(self.keepalive_path).st_mtime_ns, before)
+
+    def test_keepalive_can_be_disabled(self):
+        write(self.state_path, state_doc())
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            run_mod.main(
+                [
+                    "--state",
+                    self.state_path,
+                    "--feed",
+                    self.feed_path,
+                    "--log",
+                    self.log_path,
+                    "--keepalive",
+                    "",
+                    "--stale-after-days",
+                    "365",
+                ]
+            )
+        self.assertFalse(os.path.exists(self.keepalive_path))
 
     def test_dry_run_does_not_write_a_log_file(self):
         write(self.state_path, state_doc())
