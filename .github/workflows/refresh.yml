@@ -2,8 +2,10 @@ name: Refresh feed
 
 on:
   schedule:
-    # UTC 01:00 = 09:00 Asia/Shanghai.
-    - cron: "0 1 * * *"
+    # UTC 20:00 = 04:00 Asia/Shanghai the next day. Scheduled runs are often
+    # delayed by GitHub (observed up to ~5h), so keeping the slot at 04:00 means
+    # a delay still usually lands before the morning read.
+    - cron: "0 20 * * *"
   workflow_dispatch:
 
 permissions:
