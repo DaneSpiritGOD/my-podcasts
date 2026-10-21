@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 15 Oct 2026 15:00:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 14:53:11 +0000</lastBuildDate>
+    <item>
+      <title>We can build it. Can we judge it?</title>
+      <link>https://commandline.microsoft.com/mini-foundry-design-journey-evaluation/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=766</guid>
+      <pubDate>Tue, 20 Oct 2026 14:53:11 +0000</pubDate>
+      <itunes:author>Quirine van Walt Meijer</itunes:author>
+      <category>Conversation</category>
+      <description>As agentic AI shortens the path from idea to shipped code, journey evaluation becomes a critical design skill.</description>
+      <itunes:summary>As agentic AI shortens the path from idea to shipped code, journey evaluation becomes a critical design skill.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>12:54</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=766&amp;content_sig=f902bd8733332907c255e6d14cfbaae6461785ba5df747ef97c7bf8961ee65fc" length="15475200" type="audio/mpeg" />
+    </item>
     <item>
       <title>What will the next generation of developers do when AI writes the code?</title>
       <link>https://commandline.microsoft.com/praise-preceptor-ai-accelerated-software-engineering-cmu/</link>

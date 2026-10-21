@@ -165,6 +165,23 @@
         "Conversation"
       ],
       "summary": "Microsoft and Carnegie Mellon University are betting that the junior developers we train today will be the senior engineers of tomorrow."
+    },
+    "https://commandline.microsoft.com/?p=766": {
+      "guid": "https://commandline.microsoft.com/?p=766",
+      "title": "We can build it. Can we judge it?",
+      "link": "https://commandline.microsoft.com/mini-foundry-design-journey-evaluation/",
+      "published": "Tue, 20 Oct 2026 14:53:11 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-21T05:46:25Z",
+      "checked_at": "2026-10-21T05:46:25Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=766&content_sig=f902bd8733332907c255e6d14cfbaae6461785ba5df747ef97c7bf8961ee65fc",
+      "duration_sec": 773.682,
+      "size_bytes": 15475200,
+      "author": "Quirine van Walt Meijer",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "As agentic AI shortens the path from idea to shipped code, journey evaluation becomes a critical design skill."
     }
   }
 }
