@@ -182,6 +182,21 @@
         "Conversation"
       ],
       "summary": "As agentic AI shortens the path from idea to shipped code, journey evaluation becomes a critical design skill."
+    },
+    "https://commandline.microsoft.com/?p=775": {
+      "guid": "https://commandline.microsoft.com/?p=775",
+      "title": "Building a fully autonomous meeting invite capability for Autopilot",
+      "link": "https://commandline.microsoft.com/building-a-fully-autonomous-meeting-invite-capability-for-autopilot/",
+      "published": "Sat, 24 Oct 2026 03:21:45 +0000",
+      "status": "no_audio",
+      "first_seen": "2026-10-24T22:23:30Z",
+      "checked_at": "2026-10-24T22:23:31Z",
+      "author": "Omar Shahine",
+      "categories": [
+        "Conversation",
+        "Deep Dive"
+      ],
+      "summary": "How the Microsoft-Decision-1 model helped get this across the finish line."
     }
   }
 }
