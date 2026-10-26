@@ -197,6 +197,23 @@
         "Deep Dive"
       ],
       "summary": "How the Microsoft-Decision-1 model helped get this across the finish line."
+    },
+    "https://commandline.microsoft.com/?p=795": {
+      "guid": "https://commandline.microsoft.com/?p=795",
+      "title": "Cheap code, precious trust: Code modernization at scale",
+      "link": "https://commandline.microsoft.com/agentic-software-engineering-large-scale-code-migration-language-modernization-spec-driven-development/",
+      "published": "Mon, 26 Oct 2026 13:35:44 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-26T23:42:37Z",
+      "checked_at": "2026-10-26T23:42:37Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=795&content_sig=3737c864abb4b1628a523bcbcf5c5336fc0d1c8d5f51cf7d4f4a94e6eb95cbae",
+      "duration_sec": 614.396,
+      "size_bytes": 12289440,
+      "author": "Sriram Rajamani, Tim Bozarth",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "The promise—and challenges—of agentic software engineering, from large-scale code migration to language modernization."
     }
   }
 }

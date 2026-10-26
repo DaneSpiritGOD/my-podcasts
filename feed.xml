@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 20 Oct 2026 14:53:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 13:35:44 +0000</lastBuildDate>
+    <item>
+      <title>Cheap code, precious trust: Code modernization at scale</title>
+      <link>https://commandline.microsoft.com/agentic-software-engineering-large-scale-code-migration-language-modernization-spec-driven-development/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=795</guid>
+      <pubDate>Mon, 26 Oct 2026 13:35:44 +0000</pubDate>
+      <itunes:author>Sriram Rajamani, Tim Bozarth</itunes:author>
+      <category>Conversation</category>
+      <description>The promise—and challenges—of agentic software engineering, from large-scale code migration to language modernization.</description>
+      <itunes:summary>The promise—and challenges—of agentic software engineering, from large-scale code migration to language modernization.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>10:14</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=795&amp;content_sig=3737c864abb4b1628a523bcbcf5c5336fc0d1c8d5f51cf7d4f4a94e6eb95cbae" length="12289440" type="audio/mpeg" />
+    </item>
     <item>
       <title>We can build it. Can we judge it?</title>
       <link>https://commandline.microsoft.com/mini-foundry-design-journey-evaluation/</link>
