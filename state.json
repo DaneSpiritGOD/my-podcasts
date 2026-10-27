@@ -214,6 +214,23 @@
         "Conversation"
       ],
       "summary": "The promise—and challenges—of agentic software engineering, from large-scale code migration to language modernization."
+    },
+    "https://commandline.microsoft.com/?p=803": {
+      "guid": "https://commandline.microsoft.com/?p=803",
+      "title": "The new primitives of agentic software delivery",
+      "link": "https://commandline.microsoft.com/new-agentic-software-delivery-primitives/",
+      "published": "Tue, 27 Oct 2026 14:37:36 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-27T23:40:10Z",
+      "checked_at": "2026-10-27T23:40:11Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=803&content_sig=fc19a560a3a3064d19256be3ad087730042cf4fb75d69adf0542a3034c4a97e3",
+      "duration_sec": 662.042,
+      "size_bytes": 13242720,
+      "author": "Tim Bozarth",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "This goes beyond code generation. We’re connecting people, AI, and feedback across the software development lifecycle."
     }
   }
 }

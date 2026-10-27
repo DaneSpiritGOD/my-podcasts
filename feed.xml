@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 26 Oct 2026 13:35:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 14:37:36 +0000</lastBuildDate>
+    <item>
+      <title>The new primitives of agentic software delivery</title>
+      <link>https://commandline.microsoft.com/new-agentic-software-delivery-primitives/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=803</guid>
+      <pubDate>Tue, 27 Oct 2026 14:37:36 +0000</pubDate>
+      <itunes:author>Tim Bozarth</itunes:author>
+      <category>Conversation</category>
+      <description>This goes beyond code generation. We’re connecting people, AI, and feedback across the software development lifecycle.</description>
+      <itunes:summary>This goes beyond code generation. We’re connecting people, AI, and feedback across the software development lifecycle.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>11:02</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=803&amp;content_sig=fc19a560a3a3064d19256be3ad087730042cf4fb75d69adf0542a3034c4a97e3" length="13242720" type="audio/mpeg" />
+    </item>
     <item>
       <title>Cheap code, precious trust: Code modernization at scale</title>
       <link>https://commandline.microsoft.com/agentic-software-engineering-large-scale-code-migration-language-modernization-spec-driven-development/</link>
