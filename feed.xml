@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 27 Oct 2026 14:37:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 21:08:40 +0000</lastBuildDate>
+    <item>
+      <title>Thinking about the evolution of forward-deployed engineers over the last 24 months</title>
+      <link>https://commandline.microsoft.com/thinking-about-the-evolution-of-forward-deployed-engineers-over-the-last-24-months/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=829</guid>
+      <pubDate>Wed, 28 Oct 2026 21:08:40 +0000</pubDate>
+      <itunes:author>Kevin Shatzkamer</itunes:author>
+      <category>Conversation</category>
+      <description>The rapid pace of AI model development and technology maturity is changing the definition of forward-deployed engineering.</description>
+      <itunes:summary>The rapid pace of AI model development and technology maturity is changing the definition of forward-deployed engineering.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>8:50</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=829&amp;content_sig=f5b6e00b89bf4b231719d0f0aa9f56118f5c23254f5eb1c35de0a68a89687af6" length="10604160" type="audio/mpeg" />
+    </item>
     <item>
       <title>The new primitives of agentic software delivery</title>
       <link>https://commandline.microsoft.com/new-agentic-software-delivery-primitives/</link>

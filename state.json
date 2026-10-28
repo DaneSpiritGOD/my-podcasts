@@ -231,6 +231,23 @@
         "Conversation"
       ],
       "summary": "This goes beyond code generation. We’re connecting people, AI, and feedback across the software development lifecycle."
+    },
+    "https://commandline.microsoft.com/?p=829": {
+      "guid": "https://commandline.microsoft.com/?p=829",
+      "title": "Thinking about the evolution of forward-deployed engineers over the last 24 months",
+      "link": "https://commandline.microsoft.com/thinking-about-the-evolution-of-forward-deployed-engineers-over-the-last-24-months/",
+      "published": "Wed, 28 Oct 2026 21:08:40 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-28T23:57:47Z",
+      "checked_at": "2026-10-28T23:57:47Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=829&content_sig=f5b6e00b89bf4b231719d0f0aa9f56118f5c23254f5eb1c35de0a68a89687af6",
+      "duration_sec": 530.12,
+      "size_bytes": 10604160,
+      "author": "Kevin Shatzkamer",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "The rapid pace of AI model development and technology maturity is changing the definition of forward-deployed engineering."
     }
   }
 }
