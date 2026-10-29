@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 28 Oct 2026 21:08:40 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 18:34:49 +0000</lastBuildDate>
+    <item>
+      <title>GitHub Universe 2026: Highlights from the developer’s developer conference</title>
+      <link>https://commandline.microsoft.com/github-universe-2026-recap/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=852</guid>
+      <pubDate>Thu, 29 Oct 2026 18:34:49 +0000</pubDate>
+      <itunes:author>Command Line team</itunes:author>
+      <category>Conversation</category>
+      <description>The hero at the heart of the two-day event was the developer community.</description>
+      <itunes:summary>The hero at the heart of the two-day event was the developer community.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>4:05</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=852&amp;content_sig=7ff7dcf976cc0b78d548c912af80f25e5e202aeda139298a45039d76109de16e" length="4911360" type="audio/mpeg" />
+    </item>
     <item>
       <title>Thinking about the evolution of forward-deployed engineers over the last 24 months</title>
       <link>https://commandline.microsoft.com/thinking-about-the-evolution-of-forward-deployed-engineers-over-the-last-24-months/</link>

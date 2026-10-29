@@ -248,6 +248,23 @@
         "Conversation"
       ],
       "summary": "The rapid pace of AI model development and technology maturity is changing the definition of forward-deployed engineering."
+    },
+    "https://commandline.microsoft.com/?p=852": {
+      "guid": "https://commandline.microsoft.com/?p=852",
+      "title": "GitHub Universe 2026: Highlights from the developer’s developer conference",
+      "link": "https://commandline.microsoft.com/github-universe-2026-recap/",
+      "published": "Thu, 29 Oct 2026 18:34:49 +0000",
+      "status": "episode",
+      "first_seen": "2026-10-29T23:53:14Z",
+      "checked_at": "2026-10-29T23:53:14Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=852&content_sig=7ff7dcf976cc0b78d548c912af80f25e5e202aeda139298a45039d76109de16e",
+      "duration_sec": 245.474,
+      "size_bytes": 4911360,
+      "author": "Command Line team",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "The hero at the heart of the two-day event was the developer community."
     }
   }
 }
