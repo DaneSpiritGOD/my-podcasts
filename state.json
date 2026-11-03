@@ -249,6 +249,23 @@
       ],
       "summary": "The rapid pace of AI model development and technology maturity is changing the definition of forward-deployed engineering."
     },
+    "https://commandline.microsoft.com/?p=836": {
+      "guid": "https://commandline.microsoft.com/?p=836",
+      "title": "Nine engineers, 1,211 pull requests in a day: Lessons from building Copilot Cowork",
+      "link": "https://commandline.microsoft.com/how-we-built-copilot-cowork-python-to-rust-migration/",
+      "published": "Mon, 02 Nov 2026 15:13:56 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-03T02:09:14Z",
+      "checked_at": "2026-11-03T02:09:14Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=836&content_sig=6603aef5dc742416f4c42ecbd5823a3b06d7dd3be673737e100f289255f79b33",
+      "duration_sec": 1524.054,
+      "size_bytes": 30482880,
+      "author": "Bas Brekelmans",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "Plus a case study where we put everything together by moving our runtime from Python to Rust while live."
+    },
     "https://commandline.microsoft.com/?p=852": {
       "guid": "https://commandline.microsoft.com/?p=852",
       "title": "GitHub Universe 2026: Highlights from the developer’s developer conference",

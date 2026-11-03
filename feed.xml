@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 29 Oct 2026 18:34:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 15:13:56 +0000</lastBuildDate>
+    <item>
+      <title>Nine engineers, 1,211 pull requests in a day: Lessons from building Copilot Cowork</title>
+      <link>https://commandline.microsoft.com/how-we-built-copilot-cowork-python-to-rust-migration/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=836</guid>
+      <pubDate>Mon, 02 Nov 2026 15:13:56 +0000</pubDate>
+      <itunes:author>Bas Brekelmans</itunes:author>
+      <category>Deep Dive</category>
+      <description>Plus a case study where we put everything together by moving our runtime from Python to Rust while live.</description>
+      <itunes:summary>Plus a case study where we put everything together by moving our runtime from Python to Rust while live.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>25:24</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=836&amp;content_sig=6603aef5dc742416f4c42ecbd5823a3b06d7dd3be673737e100f289255f79b33" length="30482880" type="audio/mpeg" />
+    </item>
     <item>
       <title>GitHub Universe 2026: Highlights from the developer’s developer conference</title>
       <link>https://commandline.microsoft.com/github-universe-2026-recap/</link>
