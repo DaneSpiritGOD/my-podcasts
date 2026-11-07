@@ -9,7 +9,7 @@
       "status": "episode",
       "first_seen": "2026-10-18T13:31:40Z",
       "checked_at": "2026-10-18T13:31:41Z",
-      "source_url": "https://commandline.microsoft.com/?content_audio=327&content_sig=2259d307d510aa6a5cce35a394299c4638ef6492ae00bc4a563c77fe291b0766",
+      "source_url": "https://commandline.microsoft.com/?content_audio=327&content_sig=6f99be2a9b592e3a972fa4e74bf998fd78e823053ba0713956988b069b6de78c",
       "duration_sec": 747.292,
       "size_bytes": 14947680,
       "author": "Richard Lundeen, Roman Lutz",
@@ -282,6 +282,24 @@
         "Conversation"
       ],
       "summary": "The hero at the heart of the two-day event was the developer community."
+    },
+    "https://commandline.microsoft.com/?p=884": {
+      "guid": "https://commandline.microsoft.com/?p=884",
+      "title": "The check that catches agent failures can also train them",
+      "link": "https://commandline.microsoft.com/thinkingbox-part-two-expanded-model-evals-reinforcement-learning-rewards/",
+      "published": "Fri, 06 Nov 2026 16:51:25 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-07T00:01:57Z",
+      "checked_at": "2026-11-07T00:01:57Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=884&content_sig=c19107a8e37129b5ce94f86430a28eb29fd54b5b11d1c4e423fc97eabee4541a",
+      "duration_sec": 1192.724,
+      "size_bytes": 23856000,
+      "author": "Tuhin Kundu, Mirco Milletari",
+      "categories": [
+        "Deep Dive",
+        "Open Source"
+      ],
+      "summary": "In our second post on ThinkingBox, we look at expanded model evaluations, the price of dependable runs, and reinforcement learning on terminal-state rewards."
     }
   }
 }

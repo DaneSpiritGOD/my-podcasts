@@ -17,7 +17,21 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 02 Nov 2026 15:13:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 16:51:25 +0000</lastBuildDate>
+    <item>
+      <title>The check that catches agent failures can also train them</title>
+      <link>https://commandline.microsoft.com/thinkingbox-part-two-expanded-model-evals-reinforcement-learning-rewards/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=884</guid>
+      <pubDate>Fri, 06 Nov 2026 16:51:25 +0000</pubDate>
+      <itunes:author>Tuhin Kundu, Mirco Milletari</itunes:author>
+      <category>Deep Dive</category>
+      <category>Open Source</category>
+      <description>In our second post on ThinkingBox, we look at expanded model evaluations, the price of dependable runs, and reinforcement learning on terminal-state rewards.</description>
+      <itunes:summary>In our second post on ThinkingBox, we look at expanded model evaluations, the price of dependable runs, and reinforcement learning on terminal-state rewards.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>19:53</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=884&amp;content_sig=c19107a8e37129b5ce94f86430a28eb29fd54b5b11d1c4e423fc97eabee4541a" length="23856000" type="audio/mpeg" />
+    </item>
     <item>
       <title>Nine engineers, 1,211 pull requests in a day: Lessons from building Copilot Cowork</title>
       <link>https://commandline.microsoft.com/how-we-built-copilot-cowork-python-to-rust-migration/</link>
@@ -199,7 +213,7 @@
       <itunes:summary>Learn how the Python Risk Identification Tool for generative AI evolved over time to open up AI red teaming to subject matter experts from virtually any domain.</itunes:summary>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>12:27</itunes:duration>
-      <enclosure url="https://commandline.microsoft.com/?content_audio=327&amp;content_sig=2259d307d510aa6a5cce35a394299c4638ef6492ae00bc4a563c77fe291b0766" length="14947680" type="audio/mpeg" />
+      <enclosure url="https://commandline.microsoft.com/?content_audio=327&amp;content_sig=6f99be2a9b592e3a972fa4e74bf998fd78e823053ba0713956988b069b6de78c" length="14947680" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
