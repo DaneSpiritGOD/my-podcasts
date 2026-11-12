@@ -300,6 +300,23 @@
         "Open Source"
       ],
       "summary": "In our second post on ThinkingBox, we look at expanded model evaluations, the price of dependable runs, and reinforcement learning on terminal-state rewards."
+    },
+    "https://commandline.microsoft.com/?p=901": {
+      "guid": "https://commandline.microsoft.com/?p=901",
+      "title": "From custom infrastructure to hosted agents",
+      "link": "https://commandline.microsoft.com/from-custom-infrastructure-to-hosted-agents/",
+      "published": "Wed, 11 Nov 2026 15:07:19 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-12T01:52:13Z",
+      "checked_at": "2026-11-12T01:52:14Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=901&content_sig=4ebe2ced5b44b6f7bd24408cb7f3def3245058ee6cdc430f057d69a944ab4ed6",
+      "duration_sec": 667.234,
+      "size_bytes": 13346400,
+      "author": "AI Acceleration Studio, Microsoft Frontier Company, Casimir Wierzynski, Jon Malsan",
+      "categories": [
+        "Conversation"
+      ],
+      "summary": "What we learned rebuilding Novo’s clinical trials data agent on Microsoft Foundry: a simpler operating model, a stronger session isolation, and a direct path from tracing to evaluation and optimization."
     }
   }
 }

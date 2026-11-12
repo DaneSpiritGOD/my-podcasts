@@ -17,7 +17,20 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 06 Nov 2026 16:51:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 15:07:19 +0000</lastBuildDate>
+    <item>
+      <title>From custom infrastructure to hosted agents</title>
+      <link>https://commandline.microsoft.com/from-custom-infrastructure-to-hosted-agents/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=901</guid>
+      <pubDate>Wed, 11 Nov 2026 15:07:19 +0000</pubDate>
+      <itunes:author>AI Acceleration Studio, Microsoft Frontier Company, Casimir Wierzynski, Jon Malsan</itunes:author>
+      <category>Conversation</category>
+      <description>What we learned rebuilding Novo’s clinical trials data agent on Microsoft Foundry: a simpler operating model, a stronger session isolation, and a direct path from tracing to evaluation and optimization.</description>
+      <itunes:summary>What we learned rebuilding Novo’s clinical trials data agent on Microsoft Foundry: a simpler operating model, a stronger session isolation, and a direct path from tracing to evaluation and optimization.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>11:07</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=901&amp;content_sig=4ebe2ced5b44b6f7bd24408cb7f3def3245058ee6cdc430f057d69a944ab4ed6" length="13346400" type="audio/mpeg" />
+    </item>
     <item>
       <title>The check that catches agent failures can also train them</title>
       <link>https://commandline.microsoft.com/thinkingbox-part-two-expanded-model-evals-reinforcement-learning-rewards/</link>
