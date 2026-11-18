@@ -318,6 +318,23 @@
       ],
       "summary": "What we learned rebuilding Novo’s clinical trials data agent on Microsoft Foundry: a simpler operating model, a stronger session isolation, and a direct path from tracing to evaluation and optimization."
     },
+    "https://commandline.microsoft.com/?p=910": {
+      "guid": "https://commandline.microsoft.com/?p=910",
+      "title": "Microsoft-Decision-1.1 is now generally available for fast, low-cost decision making",
+      "link": "https://commandline.microsoft.com/microsoft-decision-model-ga/",
+      "published": "Tue, 17 Nov 2026 18:10:02 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-18T02:18:36Z",
+      "checked_at": "2026-11-18T02:18:36Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=910&content_sig=f227cb0e648ff53d29ee6d17ae33dee270b26a0bd1f4d5d193ada68f26604c12",
+      "duration_sec": 605.154,
+      "size_bytes": 12104640,
+      "author": "Achint Srivastava",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "Microsoft-Decision-1.1 is now generally available in Microsoft Foundry and through OpenRouter and Vercel. The model is powering experiences across Microsoft and has been used by more than 4,000 customers since launching in public preview last month."
+    },
     "https://commandline.microsoft.com/?p=931": {
       "guid": "https://commandline.microsoft.com/?p=931",
       "title": "Misalignment signals in Kimi K3: What probes flag and where they peak",
@@ -331,6 +348,23 @@
         "Deep Dive"
       ],
       "summary": "To truly evaluate an agent, you need to assess both its final answer and the sequence of actions used to produce that response."
+    },
+    "https://commandline.microsoft.com/?p=986": {
+      "guid": "https://commandline.microsoft.com/?p=986",
+      "title": "Building modern agentic applications with Microsoft Copilot SDK 2.0",
+      "link": "https://commandline.microsoft.com/microsoft-copilot-sdk-2-0-github/",
+      "published": "Tue, 17 Nov 2026 18:29:15 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-18T02:18:35Z",
+      "checked_at": "2026-11-18T02:18:36Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=986&content_sig=f6454d55494b4decaa76cf43ef158b5ef062af5758744e2e8268ac76256e0c71",
+      "duration_sec": 742.99,
+      "size_bytes": 14861280,
+      "author": "Patrick Nikoletich, Steve Sanderson",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "How we enhanced the Copilot runtime to support multi-tenanted, high performance architectures, and how you can choose the right architecture for your agentic use case."
     }
   }
 }

@@ -17,7 +17,33 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 11 Nov 2026 15:07:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 18:29:15 +0000</lastBuildDate>
+    <item>
+      <title>Building modern agentic applications with Microsoft Copilot SDK 2.0</title>
+      <link>https://commandline.microsoft.com/microsoft-copilot-sdk-2-0-github/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=986</guid>
+      <pubDate>Tue, 17 Nov 2026 18:29:15 +0000</pubDate>
+      <itunes:author>Patrick Nikoletich, Steve Sanderson</itunes:author>
+      <category>Deep Dive</category>
+      <description>How we enhanced the Copilot runtime to support multi-tenanted, high performance architectures, and how you can choose the right architecture for your agentic use case.</description>
+      <itunes:summary>How we enhanced the Copilot runtime to support multi-tenanted, high performance architectures, and how you can choose the right architecture for your agentic use case.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>12:23</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=986&amp;content_sig=f6454d55494b4decaa76cf43ef158b5ef062af5758744e2e8268ac76256e0c71" length="14861280" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Microsoft-Decision-1.1 is now generally available for fast, low-cost decision making</title>
+      <link>https://commandline.microsoft.com/microsoft-decision-model-ga/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=910</guid>
+      <pubDate>Tue, 17 Nov 2026 18:10:02 +0000</pubDate>
+      <itunes:author>Achint Srivastava</itunes:author>
+      <category>Deep Dive</category>
+      <description>Microsoft-Decision-1.1 is now generally available in Microsoft Foundry and through OpenRouter and Vercel. The model is powering experiences across Microsoft and has been used by more than 4,000 customers since launching in public preview last month.</description>
+      <itunes:summary>Microsoft-Decision-1.1 is now generally available in Microsoft Foundry and through OpenRouter and Vercel. The model is powering experiences across Microsoft and has been used by more than 4,000 customers since launching in public preview last month.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>10:05</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=910&amp;content_sig=f227cb0e648ff53d29ee6d17ae33dee270b26a0bd1f4d5d193ada68f26604c12" length="12104640" type="audio/mpeg" />
+    </item>
     <item>
       <title>From custom infrastructure to hosted agents</title>
       <link>https://commandline.microsoft.com/from-custom-infrastructure-to-hosted-agents/</link>
