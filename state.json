@@ -1,6 +1,20 @@
 {
   "version": 1,
   "articles": {
+    "https://commandline.microsoft.com/?p=1011": {
+      "guid": "https://commandline.microsoft.com/?p=1011",
+      "title": "Introducing agent controls: An enterprise control plane for agent behavior",
+      "link": "https://commandline.microsoft.com/introducing-agent-controls-an-enterprise-control-plane-for-agent-behavior/",
+      "published": "Wed, 18 Nov 2026 16:45:41 +0000",
+      "status": "no_audio",
+      "first_seen": "2026-11-19T01:49:27Z",
+      "checked_at": "2026-11-19T01:49:27Z",
+      "author": "Mehrnoosh Sameki, Mohamed Elmergawi, Mike Shi, Liam Crumm, Responsible AI at Microsoft",
+      "categories": [
+        "Deep Dive"
+      ],
+      "summary": "A managed Azure service, agent controls brings runtime policy to enterprise agents, built on the open-source Agent Control Specification (ACS) and Agent Hooks."
+    },
     "https://commandline.microsoft.com/?p=327": {
       "guid": "https://commandline.microsoft.com/?p=327",
       "title": "PyRIT: Democratizing AI red teaming through open-source tooling",
