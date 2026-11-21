@@ -15,6 +15,21 @@
       ],
       "summary": "A managed Azure service, agent controls brings runtime policy to enterprise agents, built on the open-source Agent Control Specification (ACS) and Agent Hooks."
     },
+    "https://commandline.microsoft.com/?p=1030": {
+      "guid": "https://commandline.microsoft.com/?p=1030",
+      "title": "Iteratively improving public benchmarks",
+      "link": "https://commandline.microsoft.com/iteratively-improving-public-benchmarks/",
+      "published": "Fri, 20 Nov 2026 17:18:37 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-21T01:19:14Z",
+      "checked_at": "2026-11-21T01:19:14Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=1030&content_sig=013a09956bf3fb798914c67843d4e741ce1d54e438a56c42bc9af9d2473dee21",
+      "duration_sec": 397.812,
+      "size_bytes": 7957920,
+      "author": "Lanqing Wu, Xiang Jiang",
+      "categories": [],
+      "summary": "Audit of coding benchmarks: DeepSWE and Terminal-Bench 4.0."
+    },
     "https://commandline.microsoft.com/?p=327": {
       "guid": "https://commandline.microsoft.com/?p=327",
       "title": "PyRIT: Democratizing AI red teaming through open-source tooling",

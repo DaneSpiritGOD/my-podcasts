@@ -17,7 +17,19 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 17 Nov 2026 18:29:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 17:18:37 +0000</lastBuildDate>
+    <item>
+      <title>Iteratively improving public benchmarks</title>
+      <link>https://commandline.microsoft.com/iteratively-improving-public-benchmarks/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=1030</guid>
+      <pubDate>Fri, 20 Nov 2026 17:18:37 +0000</pubDate>
+      <itunes:author>Lanqing Wu, Xiang Jiang</itunes:author>
+      <description>Audit of coding benchmarks: DeepSWE and Terminal-Bench 4.0.</description>
+      <itunes:summary>Audit of coding benchmarks: DeepSWE and Terminal-Bench 4.0.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>6:38</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=1030&amp;content_sig=013a09956bf3fb798914c67843d4e741ce1d54e438a56c42bc9af9d2473dee21" length="7957920" type="audio/mpeg" />
+    </item>
     <item>
       <title>Building modern agentic applications with Microsoft Copilot SDK 2.0</title>
       <link>https://commandline.microsoft.com/microsoft-copilot-sdk-2-0-github/</link>
