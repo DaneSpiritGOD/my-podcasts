@@ -30,6 +30,21 @@
       "categories": [],
       "summary": "Audit of coding benchmarks: DeepSWE and Terminal-Bench 4.0."
     },
+    "https://commandline.microsoft.com/?p=1073": {
+      "guid": "https://commandline.microsoft.com/?p=1073",
+      "title": "Choose the right stack for your AI application",
+      "link": "https://commandline.microsoft.com/choose-the-right-stack-for-your-ai-application/",
+      "published": "Tue, 24 Nov 2026 17:12:23 +0000",
+      "status": "episode",
+      "first_seen": "2026-11-25T03:28:14Z",
+      "checked_at": "2026-11-25T03:28:14Z",
+      "source_url": "https://commandline.microsoft.com/?content_audio=1073&content_sig=531cb1140ffa3bf06a442b89607676de9bafee56623a2d3e57da2e0b083ea9fa",
+      "duration_sec": 1154.508,
+      "size_bytes": 23091840,
+      "author": "Pamela Fox, Arun Sekhar",
+      "categories": [],
+      "summary": "Your goal should be to find the lowest abstraction that lets you build your application, switch models, and be able to take advantage of each model’s best features."
+    },
     "https://commandline.microsoft.com/?p=327": {
       "guid": "https://commandline.microsoft.com/?p=327",
       "title": "PyRIT: Democratizing AI red teaming through open-source tooling",

@@ -17,7 +17,19 @@
       <link>https://commandline.microsoft.com/</link>
     </image>
     <atom:link href="https://raw.githubusercontent.com/DaneSpiritGOD/my-podcasts/main/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 20 Nov 2026 17:18:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 17:12:23 +0000</lastBuildDate>
+    <item>
+      <title>Choose the right stack for your AI application</title>
+      <link>https://commandline.microsoft.com/choose-the-right-stack-for-your-ai-application/</link>
+      <guid isPermaLink="false">https://commandline.microsoft.com/?p=1073</guid>
+      <pubDate>Tue, 24 Nov 2026 17:12:23 +0000</pubDate>
+      <itunes:author>Pamela Fox, Arun Sekhar</itunes:author>
+      <description>Your goal should be to find the lowest abstraction that lets you build your application, switch models, and be able to take advantage of each model’s best features.</description>
+      <itunes:summary>Your goal should be to find the lowest abstraction that lets you build your application, switch models, and be able to take advantage of each model’s best features.</itunes:summary>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>19:15</itunes:duration>
+      <enclosure url="https://commandline.microsoft.com/?content_audio=1073&amp;content_sig=531cb1140ffa3bf06a442b89607676de9bafee56623a2d3e57da2e0b083ea9fa" length="23091840" type="audio/mpeg" />
+    </item>
     <item>
       <title>Iteratively improving public benchmarks</title>
       <link>https://commandline.microsoft.com/iteratively-improving-public-benchmarks/</link>
